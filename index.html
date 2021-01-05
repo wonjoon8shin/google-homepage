@@ -1,36 +1,49 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="UTF-8" />
     <title>Google</title>
+    <link rel="stylesheet" href="styles/google.css" />
 </head>
+
 <body>
-    <nav>
-        <a href=”#”>About</a>
-        <a href=”#”>Store</a>
-    </nav>
-    <div>
-        <a href=”#”>Gmail</a>
-        <a href=”#”>Images</a>
-        <img src="images/googleapp.png" alt="Google App Icon" />
+    <ul id="upper">
+        <li><a href=”#”>About</a></li>
+        <li><a href=”#”>Store</a></li>
+        <div id="upper-right" class="upper-right">
+            <li><a href=”#”>Gmail</a></li>
+            <li><a href=”#”>Images</a></li>
+            <li>
+                <a href="#"><img id="app-icon" src="images/googleapp.png" alt="Google App Icon" style="width: 20px; height: 20px;" /></a>
+            </li>
+            <li>
+                <a href="#" id="signin">Sign In</a>
+            </li>
+        </div>
+    </ul>
+        
+    <div class="main">
+        <div class="mainlogo">
+            <img src="images/googlelogo.png" alt="Google Logo" width="215" height="auto" />
+        </div>
+        <form id="search">
+            <input type="search" id="searchbox" placeholder="| ">
+            <button id="buttons">Google Search</button>
+            <button id="buttons">I'm Feeling Lucky</button>
+        </form>
+        <p>Google offered in: <a style="color: blue; opacity: 1;" href="#" >Français</a></p>
     </div>
 
-    
-    <img src="images/googlelogo.png" alt="Google Logo" />
-    <input type="text" placeholder="this is where the search bar should go">
-    <button type="submit">Google Search</button>
-    <button>I'm Feeling Lucky</button>
-    <p>Google offered in: Français</p>
-
     <footer>
-        <nav>
-            <a href=”#”>Advertising</a>
-            <a href=”#”>Business</a>
-            <a href=”#”>How Search works</a>
-        </nav>
-        <nav>
-            <a href=”#”>Privacy</a>
-            <a href=”#”>Terms</a>
-            <a href=”#”>Settings</a>
-        </nav>   
+        <ul id="lower">
+            <li><a href=”#”>Advertising</a></li>
+            <li><a href=”#”>Business</a></li>
+            <li><a href=”#”>How Search works</a></li>
+            <nav id="lower-right" class="lower-right">
+                <li><a href=”#”>Privacy</a></li>
+                <li><a href=”#”>Terms</a></li>
+                <li><a href=”#”>Settings</a></li>
+            </nav>
+        </ul>  
     </footer>
 </body>
